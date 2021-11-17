@@ -1,0 +1,19 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* @import "../../variables"; */
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif; */
+:root {
+  --main-purple: #7952b3;
+  --main-black: #343a40;
+  --main-yellow: #ffc107;
+  --main-grey: #e1e8eb;
+  --linear: linear 200ms;
+  --flashing-timing: cubic-bezier(0.34, -0.55, 0.67, 1.43) 300ms;
+}
+
+.header__title {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  color: var(--main-purple);
+}

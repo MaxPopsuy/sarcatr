@@ -12,7 +12,6 @@ class App extends Component {
     return (
       <div>
         <Header/>
-        <span>0</span>
         {/* <button type="button">Increment by {step}</button>
         <button type="button">Decrement by {step}</button> */}
       </div>
