@@ -5,7 +5,7 @@ font-family: 'Raleway', sans-serif; */
 
 
 .header {
-  background: var(--main-black);
+  background: $main-black;
   width: 100%;
   /* background: url('../../img/attractor1.jpg'); */
 }
@@ -15,7 +15,7 @@ font-family: 'Raleway', sans-serif; */
   padding-top: 15px;
   font-size: 24px;
   font-family: "Rubik Mono One", sans-serif;
-  color: var(--second-purple);
+  color: $second-purple;
 }
 
 .header__list {
@@ -39,7 +39,7 @@ font-family: 'Raleway', sans-serif; */
 .header__list__link {
   text-align: center;
   font-size: 24px;
-  color: var(--second-purple);
+  color: $second-purple;
 }
 
 .header__list__link:hover:after,
@@ -48,8 +48,8 @@ font-family: 'Raleway', sans-serif; */
 }
 
 .header__list__link:after {
-  color: var(--second-purple);
-  background-color: var(--second-purple);
+  color: $second-purple;
+  background-color: $second-purple;
   content: "";
   height: 2px;
   width: 0%;
@@ -60,5 +60,5 @@ font-family: 'Raleway', sans-serif; */
   transition: width .6s ease-in-out;
   text-align: center;
   font-size: 24px;
-  color: var(--second-purple);
+  color: $second-purple;
 }

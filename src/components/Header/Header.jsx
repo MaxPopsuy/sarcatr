@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './header.module.css';
+import styles from './header.module.scss';
 import { nanoid } from 'nanoid';
 
 const Header = (props) => {

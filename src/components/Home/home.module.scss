@@ -1,0 +1,21 @@
+@import "../../variables";
+
+.home {
+  background: $second-black;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center center;
+  height: 250px;
+}
+
+.home__title {
+  @include title;
+} 
+
+.home__text {
+  @include title;
+  font-size: 14px;
+  text-align-last: left;
+  margin-left: 20%;
+  width: 250px;
+}
