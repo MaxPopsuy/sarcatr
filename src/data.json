@@ -1,0 +1,27 @@
+{
+  "header": {
+    "title": "{ sarcatr }",
+    "list": [
+      {
+        "value": "About",
+        "link": "about"
+      },
+      {
+        "value": "Sarcatr",
+        "link": "sarcatr"
+      },
+      {
+        "value": "Download",
+        "link": "download"
+      },
+      {
+        "value": "Other",
+        "link": "other"
+      }
+    ]
+  },
+  "home": {
+    "title": "{ About }"
+  }
+  
+}

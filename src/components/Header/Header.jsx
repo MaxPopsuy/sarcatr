@@ -1,20 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './header.module.css';
-class Header extends Component {
-  
-  static defaultProps = {};
+import { nanoid } from 'nanoid';
 
-  static propTypes = {};
-
-  render() {
-    return (
-    <div> 
-      <h2 className = {styles.header__title}>SZH</h2>
-      Class Component
+const Header = (props) => {
+  return (
+    <header className={styles.header}> 
+      <h2 className = {styles.header__title}>{props.data.title}</h2>
       <ul className = {styles.header__list}>
-        <li className = {styles.header__list__item}><a href="#" className = {styles.header__list__link}></a></li>
+        {props.data.list.map(item => <li key={nanoid()} className = {styles.header__list__item}><a href={item.link} className = {styles.header__list__link}>{item.value}</a></li>)}
       </ul>
-    </div>);
-  }
+    </header>
+  );
 };
 export default Header;

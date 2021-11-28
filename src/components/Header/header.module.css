@@ -1,19 +1,64 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
-/* @import "../../variables"; */
+@import "../../variables";
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif; */
-:root {
-  --main-purple: #7952b3;
-  --main-black: #343a40;
-  --main-yellow: #ffc107;
-  --main-grey: #e1e8eb;
-  --linear: linear 200ms;
-  --flashing-timing: cubic-bezier(0.34, -0.55, 0.67, 1.43) 300ms;
+/* font-family: 'Rubik Mono One', sans-serif; */
+
+
+.header {
+  background: var(--main-black);
+  width: 100%;
+  /* background: url('../../img/attractor1.jpg'); */
 }
 
 .header__title {
+  text-align: center;
+  padding-top: 15px;
   font-size: 24px;
-  font-family: "Raleway", sans-serif;
-  color: var(--main-purple);
+  font-family: "Rubik Mono One", sans-serif;
+  color: var(--second-purple);
+}
+
+.header__list {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  /* text-align: center; */
+  justify-content: space-around;
+}
+
+.header__list__item {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  list-style-type: none;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  line-height: 2;
+}
+
+.header__list__link {
+  text-align: center;
+  font-size: 24px;
+  color: var(--second-purple);
+}
+
+.header__list__link:hover:after,
+.header__list__link:focus:after {
+  width: 100%;
+}
+
+.header__list__link:after {
+  color: var(--second-purple);
+  background-color: var(--second-purple);
+  content: "";
+  height: 2px;
+  width: 0%;
+  left: 50%;
+  top: 80%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: width .6s ease-in-out;
+  text-align: center;
+  font-size: 24px;
+  color: var(--second-purple);
 }
